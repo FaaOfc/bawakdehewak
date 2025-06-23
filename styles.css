@@ -2,14 +2,14 @@
     --bg-color: #0a0f0a;
     --text-color: #e0e0e0;
     --link-bg: #1e1e1e; 
-    --link-hover: #4caf50; 
+    --link-hover: #b50000; 
     --link-shadow: rgba(255, 255, 255, 0.2); 
     --music-bg: rgba(255, 255, 255, 0.1); 
-    --primary-color: #66bb6a; 
-    --secondary-color: #80e27e;  
+    --primary-color: #b50000; 
+    --secondary-color: #d10000;  
     --highlight-color: #fbc02d; 
-    --button-color: #66bb6a; 
-    --button-hover-color: #388e3c;
+    --button-color: #b50000; 
+    --button-hover-color: #d90000;
 }
 
 
