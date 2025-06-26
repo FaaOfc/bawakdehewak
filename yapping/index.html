@@ -4,59 +4,166 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Baca Teks Yaping</title>
-  <link rel="stylesheet" href="styles.css"/>
+  <style>
+    :root {
+      --bg-color: #0a0f0a;
+      --text-color: #e0e0e0;
+      --link-bg: #1e1e1e;
+      --link-hover: #b50000;
+      --link-shadow: rgba(255, 255, 255, 0.2);
+      --primary-color: #b50000;
+      --secondary-color: #d10000;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 600px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .profile {
+      text-align: center;
+      margin-bottom: 30px;
+      width: 100%;
+    }
+
+    .profile-name {
+      font-size: 28px;
+      font-weight: 700;
+      background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .links-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .link-item {
+      background-color: var(--link-bg);
+      padding: 16px 20px;
+      border-radius: 12px;
+      text-decoration: none;
+      color: var(--text-color);
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 4px 10px var(--link-shadow);
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    .link-item::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 4px;
+      height: 100%;
+      background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
+      transition: width 0.3s ease;
+    }
+
+    .link-item:hover {
+      transform: translateY(-3px) scale(1.01);
+      box-shadow: 0 8px 15px var(--link-shadow);
+    }
+
+    .link-item:hover::before {
+      width: 100%;
+      opacity: 0.1;
+    }
+
+    .text-box {
+      white-space: pre-wrap;
+      line-height: 1.8;
+      background-color: var(--link-bg);
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px var(--link-shadow);
+      margin-bottom: 20px;
+      color: var(--text-color);
+      max-height: 70vh;
+      overflow-y: auto;
+    }
+
+    @media (max-width: 768px) {
+      .profile-name {
+        font-size: 24px;
+      }
+
+      .text-box {
+        font-size: 14px;
+        padding: 15px;
+      }
+    }
+  </style>
 </head>
 <body>
   <div class="container">
-    <!-- Judul atau Header -->
     <div class="profile">
       <h1 class="profile-name">Pembaca Teks Yaping</h1>
     </div>
 
-    <!-- Tombol Pilihan -->
     <div class="links-container">
-      <a href="#" class="link-item" onclick="loadText('yaping-1.txt'); return false;">
+      <!-- Tombol Yaping 1 -->
+      <a href="#" class="link-item" onclick="loadText('yaping-1.txt', 'text-display-1'); return false;">
         📖 Baca Yaping 1
       </a>
-      <a href="#" class="link-item" onclick="loadText('yaping-2.txt'); return false;">
+      <!-- Kontainer isi Yaping 1 -->
+      <div id="text-display-1" class="text-box">
+        <p style="opacity: 0.7;">Teks Yaping 1 akan muncul di sini...</p>
+      </div>
+
+      <!-- Tombol Yaping 2 -->
+      <a href="#" class="link-item" onclick="loadText('yaping-2.txt', 'text-display-2'); return false;">
         📖 Baca Yaping 2
       </a>
-    </div>
-
-    <!-- Tempat Menampilkan Teks, di bawah tombol -->
-    <div style="width: 100%; margin-top: 30px;">
-      <div id="text-display"
-           style="
-             white-space: pre-wrap;
-             line-height: 1.8;
-             background-color: var(--link-bg);
-             padding: 20px;
-             border-radius: 12px;
-             max-height: 70vh;
-             overflow-y: auto;
-             box-shadow: 0 4px 10px var(--link-shadow);
-             color: var(--text-color);
-           ">
-        <p style="opacity: 0.7;">Silakan pilih teks untuk ditampilkan...</p>
+      <!-- Kontainer isi Yaping 2 -->
+      <div id="text-display-2" class="text-box">
+        <p style="opacity: 0.7;">Teks Yaping 2 akan muncul di sini...</p>
       </div>
     </div>
   </div>
-<script>
-    function loadText(fileName) {
-  fetch(`yapping/teks/${fileName}`)
-    .then(response => {
-      if (!response.ok) throw new Error("Gagal memuat teks.");
-      return response.text();
-    })
-    .then(data => {
-      document.getElementById("text-display").textContent = data;
-    })
-    .catch(error => {
-      document.getElementById("text-display").textContent = "Terjadi kesalahan saat memuat teks.";
-      console.error(error);
-    });
+
+  <script>
+    function loadText(fileName, containerId) {
+      fetch(`yapping/teks/${fileName}`)
+        .then(response => {
+          if (!response.ok) throw new Error("Gagal memuat teks.");
+          return response.text();
+        })
+        .then(data => {
+          document.getElementById(containerId).textContent = data;
+        })
+        .catch(error => {
+          document.getElementById(containerId).textContent = "Terjadi kesalahan saat memuat teks.";
+          console.error(error);
+        });
     }
   </script>
 </body>
 </html>
-
