@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Baca Teks Yaping</title>
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
   <div class="container">
@@ -28,7 +28,7 @@
 
   <script>
     function loadText(fileName) {
-  fetch(`teks/${fileName}`)
+  fetch(`yapping/teks/${fileName}`)
     .then(response => {
       if (!response.ok) throw new Error("Gagal memuat teks.");
       return response.text();
