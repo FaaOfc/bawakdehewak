@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Baca Teks Yaping</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <div class="profile">
+      <h1 class="profile-name">Pembaca Teks Yaping</h1>
+    </div>
+
+    <div class="links-container">
+      <a href="#" class="link-item" onclick="loadText('yaping-1.txt')">
+        📖 Baca Yaping 1
+      </a>
+      <a href="#" class="link-item" onclick="loadText('yaping-2.txt')">
+        📖 Baca Yaping 2
+      </a>
+    </div>
+
+    <div id="text-display" class="text-display" style="margin-top: 30px; white-space: pre-wrap; line-height: 1.8; background-color: var(--link-bg); padding: 20px; border-radius: 12px; max-height: 70vh; overflow-y: auto;">
+      <p style="opacity: 0.7;">Silakan pilih teks untuk ditampilkan...</p>
+    </div>
+  </div>
+
+  <script>
+    function loadText(fileName) {
+  fetch(`teks/${fileName}`)
+    .then(response => {
+      if (!response.ok) throw new Error("Gagal memuat teks.");
+      return response.text();
+    })
+    .then(data => {
+      document.getElementById("text-display").textContent = data;
+    })
+    .catch(error => {
+      document.getElementById("text-display").textContent = "Terjadi kesalahan saat memuat teks.";
+      console.error(error);
+    });
+    }
+  </script>
+</body>
+</html>
+
