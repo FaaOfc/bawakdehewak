@@ -1,0 +1,181 @@
+{
+  "MTK": [
+    {
+      "pertanyaan": "Berapakah hasil dari 12 × 8?",
+      "pilihan": ["80", "96", "108", "120"],
+      "jawaban": "96"
+    },
+    {
+      "pertanyaan": "Jika x + 5 = 12, maka x = ?",
+      "pilihan": ["5", "6", "7", "8"],
+      "jawaban": "7"
+    },
+    {
+      "pertanyaan": "Hasil dari 9² adalah?",
+      "pilihan": ["81", "72", "64", "91"],
+      "jawaban": "81"
+    },
+    {
+      "pertanyaan": "Berapa keliling persegi dengan sisi 15 cm?",
+      "pilihan": ["30 cm", "45 cm", "60 cm", "75 cm"],
+      "jawaban": "60 cm"
+    },
+    {
+      "pertanyaan": "Hasil dari 45 ÷ 5 adalah?",
+      "pilihan": ["7", "8", "9", "10"],
+      "jawaban": "9"
+    },
+    {
+      "pertanyaan": "Jika diameter lingkaran 14 cm, berapa jari-jarinya?",
+      "pilihan": ["5 cm", "6 cm", "7 cm", "8 cm"],
+      "jawaban": "7 cm"
+    },
+    {
+      "pertanyaan": "Persamaan garis lurus umum adalah?",
+      "pilihan": ["y = mx + c", "x = y + c", "x = my + c", "y = cx + m"],
+      "jawaban": "y = mx + c"
+    },
+    {
+      "pertanyaan": "0,5 dalam pecahan adalah?",
+      "pilihan": ["1/4", "1/2", "3/4", "2/3"],
+      "jawaban": "1/2"
+    },
+    {
+      "pertanyaan": "Hasil dari 7 × 6 adalah?",
+      "pilihan": ["36", "42", "48", "56"],
+      "jawaban": "42"
+    },
+    {
+      "pertanyaan": "Hasil dari 100 - 37 adalah?",
+      "pilihan": ["63", "67", "73", "77"],
+      "jawaban": "63"
+    }
+  ],
+  "TIK": [
+    {
+      "pertanyaan": "Apa kepanjangan dari CPU?",
+      "pilihan": ["Central Processing Unit", "Central Power Unit", "Control Program Unit", "Central Print Unit"],
+      "jawaban": "Central Processing Unit"
+    },
+    {
+      "pertanyaan": "Shortcut untuk copy pada Windows?",
+      "pilihan": ["Ctrl + V", "Ctrl + C", "Ctrl + X", "Ctrl + A"],
+      "jawaban": "Ctrl + C"
+    },
+    {
+      "pertanyaan": "WWW singkatan dari?",
+      "pilihan": ["World Wide Web", "World Web Wide", "Wide World Web", "Web World Wide"],
+      "jawaban": "World Wide Web"
+    },
+    {
+      "pertanyaan": "Sistem operasi buatan Microsoft adalah?",
+      "pilihan": ["Linux", "Windows", "MacOS", "Android"],
+      "jawaban": "Windows"
+    },
+    {
+      "pertanyaan": "File berformat .jpg digunakan untuk?",
+      "pilihan": ["Video", "Audio", "Gambar", "Teks"],
+      "jawaban": "Gambar"
+    },
+    {
+      "pertanyaan": "Kepanjangan dari HTML adalah?",
+      "pilihan": ["Hyper Text Markup Language", "High Tech Machine Language", "Hyper Terminal Main Link", "Hyper Text Machine Language"],
+      "jawaban": "Hyper Text Markup Language"
+    },
+    {
+      "pertanyaan": "Shortcut paste di Windows?",
+      "pilihan": ["Ctrl + C", "Ctrl + V", "Ctrl + X", "Ctrl + Z"],
+      "jawaban": "Ctrl + V"
+    },
+    {
+      "pertanyaan": "Perangkat input di bawah ini adalah?",
+      "pilihan": ["Printer", "Monitor", "Mouse", "Speaker"],
+      "jawaban": "Mouse"
+    },
+    {
+      "pertanyaan": "Google Chrome adalah contoh?",
+      "pilihan": ["Sistem Operasi", "Browser", "Game", "Aplikasi Desain"],
+      "jawaban": "Browser"
+    },
+    {
+      "pertanyaan": "RAM berfungsi untuk?",
+      "pilihan": ["Menyimpan data permanen", "Memproses gambar", "Menyimpan data sementara", "Mencetak dokumen"],
+      "jawaban": "Menyimpan data sementara"
+    },
+    {
+      "pertanyaan": "Singkatan dari LAN adalah?",
+      "pilihan": ["Large Area Network", "Local Area Network", "Long Area Network", "Line Area Network"],
+      "jawaban": "Local Area Network"
+    },
+    {
+      "pertanyaan": "Shortcut untuk Select All pada Windows?",
+      "pilihan": ["Ctrl + S", "Ctrl + A", "Ctrl + D", "Ctrl + L"],
+      "jawaban": "Ctrl + A"
+    },
+    {
+      "pertanyaan": "Apa itu firewall?",
+      "pilihan": ["Perangkat keras untuk memotong jaringan", "Perangkat lunak untuk keamanan jaringan", "Virus komputer", "Alat cetak"],
+      "jawaban": "Perangkat lunak untuk keamanan jaringan"
+    },
+    {
+      "pertanyaan": "Shortcut untuk Undo adalah?",
+      "pilihan": ["Ctrl + U", "Ctrl + Z", "Ctrl + Y", "Ctrl + R"],
+      "jawaban": "Ctrl + Z"
+    },
+    {
+      "pertanyaan": "Microsoft Excel digunakan untuk?",
+      "pilihan": ["Presentasi", "Tabel dan perhitungan", "Mengetik surat", "Mengedit video"],
+      "jawaban": "Tabel dan perhitungan"
+    },
+    {
+      "pertanyaan": "Perangkat penyimpanan eksternal contohnya?",
+      "pilihan": ["RAM", "Flashdisk", "VGA", "Motherboard"],
+      "jawaban": "Flashdisk"
+    },
+    {
+      "pertanyaan": "Untuk mengakses Internet dibutuhkan?",
+      "pilihan": ["Browser", "Photoshop", "Excel", "Word"],
+      "jawaban": "Browser"
+    },
+    {
+      "pertanyaan": "Ekstensi file PowerPoint adalah?",
+      "pilihan": [".docx", ".xlsx", ".pptx", ".html"],
+      "jawaban": ".pptx"
+    },
+    {
+      "pertanyaan": "Shortcut untuk save file adalah?",
+      "pilihan": ["Ctrl + S", "Ctrl + O", "Ctrl + N", "Ctrl + P"],
+      "jawaban": "Ctrl + S"
+    },
+    {
+      "pertanyaan": "FTP digunakan untuk?",
+      "pilihan": ["Transfer file", "Cetak dokumen", "Editing foto", "Presentasi"],
+      "jawaban": "Transfer file"
+    },
+    {
+      "pertanyaan": "Yang termasuk sistem operasi adalah?",
+      "pilihan": ["Ubuntu", "Corel Draw", "Photoshop", "AutoCAD"],
+      "jawaban": "Ubuntu"
+    },
+    {
+      "pertanyaan": "Perangkat output contohnya?",
+      "pilihan": ["Mouse", "Keyboard", "Monitor", "Scanner"],
+      "jawaban": "Monitor"
+    },
+    {
+      "pertanyaan": "Virus komputer dibuat untuk?",
+      "pilihan": ["Mengamankan data", "Merusak sistem", "Mempercepat komputer", "Memasang program"],
+      "jawaban": "Merusak sistem"
+    },
+    {
+      "pertanyaan": "Bluetooth digunakan untuk?",
+      "pilihan": ["Transfer nirkabel jarak dekat", "Mengakses internet", "Mencetak dokumen", "Memutar musik"],
+      "jawaban": "Transfer nirkabel jarak dekat"
+    },
+    {
+      "pertanyaan": "Shortcut untuk membuka tab baru di browser adalah?",
+      "pilihan": ["Ctrl + T", "Ctrl + W", "Ctrl + Q", "Ctrl + R"],
+      "jawaban": "Ctrl + T"
+    }
+  ]
+}

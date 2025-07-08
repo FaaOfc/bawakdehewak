@@ -1,0 +1,51 @@
+body {
+  background: #121212;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+  max-width: 500px;
+}
+
+.mode-pilih button,
+#pilihan button {
+  background: #1f1f1f;
+  color: #fff;
+  border: 2px solid #444;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.mode-pilih button:hover,
+#pilihan button:hover {
+  background: #333;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+#feedback {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
+
+#hasil-akhir {
+  font-size: 1.5em;
+  margin-top: 20px;
+}

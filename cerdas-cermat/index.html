@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cerdas Cermat</title>
+  <link rel="stylesheet" href="cerdas-cermat/style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Cerdas Cermat</h1>
+    <div class="mode-pilih">
+      <button onclick="mulaiGame('MTK')">MTK</button>
+      <button onclick="mulaiGame('TIK')">TIK</button>
+    </div>
+    <div id="game" class="hidden">
+      <div class="header">
+        <div>Skor: <span id="skor">0</span></div>
+        <div>Timer: <span id="timer">30</span>s</div>
+      </div>
+      <div id="soal-box">
+        <div id="pertanyaan"></div>
+        <div id="pilihan"></div>
+      </div>
+      <div id="feedback"></div>
+    </div>
+    <div id="hasil-akhir" class="hidden"></div>
+  </div>
+
+  <script src="cerdas-cermat/script.js"></script>
+</body>
+</html>
