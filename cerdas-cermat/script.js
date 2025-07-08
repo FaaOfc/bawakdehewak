@@ -6,7 +6,7 @@ let sisaWaktu = 30;
 
 async function mulaiGame(mode) {
   // Load soal dari JSON
-  const res = await fetch('soal.json');
+  const res = await fetch('cerdas-cermat/soal.json');
   const data = await res.json();
   soal = data[mode];
   shuffleArray(soal); // acak urutan soal
