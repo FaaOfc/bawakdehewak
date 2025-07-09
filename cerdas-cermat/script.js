@@ -57,8 +57,20 @@ function cekJawaban(dipilih, benar) {
 function akhirGame() {
   clearInterval(timerInterval);
   document.getElementById("game").classList.add("hidden");
+
+  let komentar = "";
+  if (skor <= 30) {
+    komentar = "Gaptek amat jir";
+  } else if (skor <= 60) {
+    komentar = "Cocok masuk kominpo inimah";
+  } else if (skor <= 90) {
+    komentar = "Cih, dikit lagi";
+  } else {
+    komentar = "Alah hoki doang itu!";
+  }
+
   const hasil = document.getElementById("hasil-akhir");
-  hasil.innerHTML = `Permainan selesai!<br>Skor akhir kamu: <strong>${skor}</strong>`;
+  hasil.innerHTML = `Permainan selesai!<br>Skor akhir kamu: <strong>${skor}</strong><br>${komentar}`;
   hasil.classList.remove("hidden");
   document.querySelector(".mode-pilih").classList.remove("hidden");
 }
