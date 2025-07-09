@@ -51,6 +51,58 @@
       "jawaban": "63"
     }
   ],
+  "TIK-EZ": [
+    {
+      "pertanyaan": "Apa itu komputer?",
+      "pilihan": ["Hewan", "Kendaraan", "Alat hitung elektronik", "Bangunan"],
+      "jawaban": "Alat hitung elektronik"
+    },
+    {
+      "pertanyaan": "Apa nama tombol untuk mematikan komputer secara manual?",
+      "pilihan": ["Power", "Shift", "Enter", "Esc"],
+      "jawaban": "Power"
+    },
+    {
+      "pertanyaan": "Apa fungsi mouse?",
+      "pilihan": ["Mengetik", "Mencetak", "Menggerakkan pointer", "Memutar musik"],
+      "jawaban": "Menggerakkan pointer"
+    },
+    {
+      "pertanyaan": "Apa itu monitor?",
+      "pilihan": ["Alat keluaran", "Alat input", "Alat cetak", "Perangkat lunak"],
+      "jawaban": "Alat keluaran"
+    },
+    {
+      "pertanyaan": "Shortcut Ctrl + C digunakan untuk?",
+      "pilihan": ["Copy", "Paste", "Cut", "Save"],
+      "jawaban": "Copy"
+    },
+    {
+      "pertanyaan": "Perangkat lunak disebut juga?",
+      "pilihan": ["Hardware", "Software", "Mouse", "Monitor"],
+      "jawaban": "Software"
+    },
+    {
+      "pertanyaan": "Perangkat keras komputer disebut juga?",
+      "pilihan": ["Software", "Hardware", "File", "Folder"],
+      "jawaban": "Hardware"
+    },
+    {
+      "pertanyaan": "Untuk membuka dokumen Word digunakan program?",
+      "pilihan": ["Paint", "Excel", "Word", "PowerPoint"],
+      "jawaban": "Word"
+    },
+    {
+      "pertanyaan": "Apa nama tempat sampah di desktop Windows?",
+      "pilihan": ["Recycle Bin", "My Computer", "Network", "Folder"],
+      "jawaban": "Recycle Bin"
+    },
+    {
+      "pertanyaan": "Apa fungsi printer?",
+      "pilihan": ["Menampilkan gambar di layar", "Mencetak dokumen", "Menyimpan file", "Menghapus file"],
+      "jawaban": "Mencetak dokumen"
+    }
+  ],
   "TIK": [
     {
       "pertanyaan": "Apa kepanjangan dari CPU?",
