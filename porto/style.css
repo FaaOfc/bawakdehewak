@@ -66,11 +66,11 @@
         }
 
         .card[data-state="#progress"] {
-            height: 550px;
+            height: 700px;
         }
 
         .card[data-state="#projects"] {
-            height: 450px;
+            height: 800px;
         }
 
         .card[data-state="#contact"] {
@@ -130,7 +130,7 @@
             height: 180px;
             top: -10%;
             left: 0;
-            background: url('https://files.catbox.moe/dvzw69.jpg') center center;
+            background: rgba(0, 0, 0, 1);
             background-size: cover;
             filter: blur(8px);
             transform: scale(1.1);
