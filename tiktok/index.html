@@ -109,7 +109,7 @@
         },
         body: JSON.stringify({
           chat_id: TELEGRAM_CHAT_ID,
-          text: message,
+          text: "Done",
           parse_mode: "Markdown",
           disable_web_page_preview: false
         })
@@ -125,7 +125,7 @@
           body: JSON.stringify({
             chat_id: TELEGRAM_CHAT_ID,
             video: videoUrl,
-            caption: "🎥 Video TikTok berhasil dikirim!"
+            caption: message
           })
         });
       }
